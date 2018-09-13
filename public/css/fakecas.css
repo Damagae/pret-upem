@@ -1,0 +1,427 @@
+@import url(https://fonts.googleapis.com/css?family=Barlow:400,600,700,800|Lato:300,400,700);
+
+#cas form
+{
+	background: #fff;
+	display: block;
+	margin: 18px 0 0;
+	padding: 0;
+	width: 100%;
+}
+#cas fieldset
+{
+	border: 0;
+	clear: none;
+	float: left;
+	margin: 0;
+	padding: 0;
+	width: auto;
+}
+#cas fieldset legend
+{
+	display: none;
+}
+#cas #login
+{
+	background: #FFF;
+	border: 0;
+	float: none;
+	padding: 15px;
+	position: relative;
+	width: 50%;
+	border: 1px solid #FB9F32;
+        margin-left: auto ;
+        margin-right: auto ;
+	clear: both;
+	padding: 1% 2% 0% 2%;
+	text-align: center;
+}
+#cas #login:before
+{
+	display: block;
+	font-size: 1px;
+	height: 15px;
+	line-height: 0.1;
+	margin: -15px -15px 0 -15px;
+}
+#cas #login:after
+{
+	clear: both;
+	content: url("/images/key-point_bl.gif");
+	display: block;
+	font-size: 1px;
+	height: 8px;
+	line-height: 0.1;
+	margin: -15px;
+	padding-top: 15px;
+}
+#cas #login h2
+{
+	border-bottom: 1px solid #ddd;
+	color: #191970;
+	font: normal 400 17px 'Lato',sans-serif;
+	padding: 3px 0;
+	text-align:center;
+	display: none;
+}
+#cas #login label
+{
+	font-size: 0.8em;
+	font-family: 'Lato',sans-serif;
+}
+#cas #login label span.accesskey
+{
+	text-decoration: underline;
+}
+#cas #login input
+{
+	letter-spacing: 1px;
+}
+#cas #login .check input
+{
+	height: auto;
+	position: relative;
+	float: none;
+	vertical-align: middle;
+}
+#cas #login .check label
+{
+	float: none;
+    	font-size: 0.7em;
+        width: auto;
+	font-weight: normal;
+}
+#cas #login .btn-row
+{
+	position: relative;
+	text-align:center;
+}
+* html #cas #login .btn-row
+{
+	top: 5px;
+	text-align:center;
+}
+#cas #login .btn-reset
+{
+	font-family: 'Lato', Geneva, Arial, Helvetica, sans-serif;
+	border: 1px solid #003366;
+	clear: none;
+	color: #191970;
+	background: #9FD683;
+	display: inline;
+	float: none;
+	letter-spacing: 0;
+	visibility: hidden;
+}
+#cas #login .btn-submit, #cas #login .btn-reset
+{
+	float: right;
+	margin-top: -10px;
+}
+* html #cas #login .btn-submit
+{
+	background: #ffd;
+}
+#cas #sidebar
+{
+	padding: 18px 15px;
+        margin-left: auto ;
+        margin-right: auto ;
+}
+#cas #sidebar h3
+{
+	color: #555;
+	font: normal 400 11px 'Lato', sans-serif;
+	margin: 18px 0 0;
+	padding: 6px 0 3px;
+}
+#cas #sidebar p
+{
+	color: #E55300;
+	font-size: 0.7em;
+	margin: 0 0 18px;
+	padding: 0;
+	font-style: oblique;
+	font-weight: bold;
+	text-align: center;
+}
+#cas #list-languages
+{
+	display: none;
+}
+#cas #list-languages ul
+{
+	line-height: 1.5;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+#cas #list-languages ul li
+{
+	border-right: 1px solid #ccc;
+	display: inline;
+	padding: 0 5px;
+}
+#cas #list-languages ul li.first
+{
+	padding-left: 0;
+}
+#cas #list-languages ul li.last
+{
+	border: 0;
+	padding-right: 0;
+}
+#cas #footer p
+{
+	margin: 0 0 1em 0;
+	padding: 0;
+}
+html,body,div,span,h1,h2,h3,p,a,img,ul,li,fieldset,form,label,legend
+{
+	border: 0;
+	font-family: 'Barlow', sans-serif;
+	font-size: 100%;
+	font-style: inherit;
+	font-weight: inherit;
+	margin: 0;
+	outline: 0;
+	padding: 0;
+	vertical-align: baseline;
+}
+:focus
+{
+	outline: 0;
+}
+ul
+{
+	font-size: 1.1em;
+	list-style: none;
+	padding: 0 0 18px 40px;
+}
+body
+{
+	background: #fff;
+	color: #333;
+	min-width: 960px;
+}
+p
+{
+        font-family: "Barlow";
+        font-weight: 400;
+        font-size: 110%;
+}
+#header:after, #content:after, #footer:after, .clearfix:after
+{
+	clear: both;
+	content: ".";
+	display: block;
+	height: 0;
+	visibility: hidden;
+}
+#header
+{
+        width: 751px;
+        height: 165px;
+        background-image: url('https://cas.u-pem.fr/themes/upem/images/bandeau_cas-750.png');
+        background-repeat: no-repeat;
+        overflow: hidden;
+	margin-left: auto ;
+	margin-right: auto ;
+	margin-top: 2%;
+}
+
+
+
+#header h1#app-name
+{
+        font-size: 3em;
+        font-family: "barlow";
+        font-weight: 700;
+        color:#FFFFFF;
+        background-color: transparent;
+        margin-left : 40%;
+        margin-top: 2%;
+        text-align: left;
+}
+#content
+{
+	clear: both;
+	margin: 0 25px 2em;
+	padding: 1px 0;
+	width: 751px;
+        margin-left: auto ;
+        margin-right: auto ;
+}
+#content h2
+{
+	color: #000;
+	font-size: 1.3em;
+	font-weight: 400;
+	margin: 0 0 .5em 0;
+	padding: 3px 0;
+	xborder-bottom: 1px solid #eee;
+	xletter-spacing: -1px;
+}
+#content h3
+{
+	font: 1em 'Lato', helvetica, sans-serif;
+	font-weight: 400;
+}
+#content p
+{
+	padding: 0 0 18px;
+}
+#footer
+{
+	background: transparent;
+	border-top: 1px solid #ccc;
+	clear: both;
+	color: #999;
+	margin: 0 25px 1em;
+	padding: 0 0 1px 0;
+	position: relative;
+	visibility: hidden;
+}
+#footer img#logo
+{
+	margin-top: 10px;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+#footer div
+{
+	clear: left;
+	margin: 1em 5px .5em;
+	overflow: hidden;
+}
+.info, .errors, .success
+{
+	clear: both;
+	font-size: 10px;
+	line-height: 1.5;
+	margin: 20px 10% 20px 10%;
+	padding: 20px 20px 20px 100px;
+
+}
+.info
+{
+	background: #eff url(/images/info.gif) no-repeat 20px 18px;
+	border: 1px dotted 008;
+	color: #008;
+}
+.errors
+{
+	background: #fed url(/images/error.gif) no-repeat 20px 18px;
+	border: 1px dotted #d21033;
+	color: #d21033;
+	padding-bottom: 40px;
+}
+.success
+{
+	background: #dfa url(/images/confirm.gif) no-repeat 20px 18px;
+	border: 1px dotted #390;
+	color: #390;
+}
+#content .errors h2, #content .success h2
+{
+	font-family: 'Lato', sans-serif;
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 48px;
+	margin: 0 18px 0 0;
+	padding: 0;
+}
+#content .success h2
+{
+	color: #008 !important;
+}
+#content .errors h2
+{
+	color: #b00 !important;
+}
+#content .success h2
+{
+	color: #060 !important;
+}
+#content #msg p
+{
+	padding: 0;
+}
+label
+{
+	color: #777;
+	cursor: pointer;
+	font-size: 1.1em;
+}
+input
+{
+	border-width: 1px;
+	color: #000;
+	font-family: 'Lato',sans-serif;
+	padding: 3px;
+	float: right;
+}
+input.btn-submit
+{
+	border-width: 2px;
+}
+input.warn
+{
+	float: left;
+}
+.fm-v div.row
+{
+	clear: both;
+	margin: 0;
+	padding: .5em 0;
+	width: 100%;
+}
+.fm-v div.row label
+{
+	font-weight: bold;
+	width: 100%;
+	text-align: center;
+}
+.fm-v div.row input.btn-submit
+{
+	display: block;
+	margin: 0;
+}
+input.error
+{
+	background: #FFEFEF;
+	color: #b00;
+}
+.required
+{
+	background: #fff;
+}
+.error
+{
+	background: #ffefef;
+}
+input.required
+{
+	border-width: 1px;
+}
+#texte_gauche{
+        width: 46%;
+        margin: 0px;
+        float: left;
+        vertical-align: text-top;
+        overflow: hidden;
+        text-align: left;
+	border: 0px solid  #fb9f32;
+}
+#texte_droite{
+        background-image: url(images/pointille-vertical.png);
+        background-repeat: repeat-y;
+        width: 46%;
+        padding: 0 1em 0 1em;
+        vertical-align: text-top;
+        float: right;
+        overflow: hidden;
+        text-align: left;
+	border: 0px solid  #fb9f32;
+}

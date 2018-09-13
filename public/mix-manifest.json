@@ -1,0 +1,9 @@
+{
+    "/js/delegataire.js": "/js/delegataire.js",
+    "/js/personnel.js": "/js/personnel.js",
+    "/js/etudiant.js": "/js/etudiant.js",
+    "/css/app.css": "/css/app.css",
+    "/js/enseignant.js": "/js/enseignant.js",
+    "/js/unauthorized.js": "/js/unauthorized.js",
+    "/js/notfound.js": "/js/notfound.js"
+}

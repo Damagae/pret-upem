@@ -1,0 +1,1000 @@
+
+// Fonts
+@import url("https://fonts.googleapis.com/css?family=Barlow:400,600,700,800|Lato:300,400,700");
+
+// Variables
+@import "variables";
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+* {
+  font-family: $font-family-sans-serif;
+  color: $lecture;
+  font-size: $font-size-base;
+  line-height: $line-height-base;
+  cursor: auto;
+}
+
+#load {
+  color: white;
+  opacity: inherit;
+  margin-left: 0.5rem;
+  -webkit-animation: rotation 2.5s infinite linear;
+  animation: rotation 2.5s infinite linear;
+  font-size: 1rem;
+  display: none;
+}
+
+.margin-top {
+  margin-top: 2rem;
+}
+
+.end {
+  margin-bottom: 10rem !important;
+}
+
+.end-div {
+  height: 10rem;
+}
+
+h1, h2, h3, h4 {
+  font-weight: 300;
+}
+
+.orange {
+  color: $orange-upem;
+}
+
+.form-control[disabled] {
+  cursor: default;
+}
+
+/* Objectif */
+
+.objectif {
+  opacity: 0.5;
+  text-align: center;
+
+  td, img, p {
+    cursor: default !important;
+  }
+
+  img {
+    opacity: 0.8;
+    max-width: 200px;
+  }
+
+  p {
+    font-size: 1.8rem;
+  }
+
+}
+
+/* Popup alert */
+
+.modal {
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+
+  strong {
+    color: $orange-upem;
+    font-size: 1.6rem;
+  }
+
+  .popup {
+    padding: 4rem;
+    background-color: white;
+    text-align: center;
+    border-radius: 15px;
+  }
+
+  .cancel, .confirm {
+    cursor: pointer;
+    margin-top: 2rem;
+    padding: 1rem 3rem;
+    border-radius: 10px;
+    border: rgba(0, 0, 0, 0) 1px solid;
+    //transition: border 0.2s ease;
+  }
+
+  .cancel:hover, .confirm:hover {
+    box-sizing: border-box;
+    border-radius: 10px;
+    border: $orange-upem 1px solid;
+    opacity: 1;
+    transition: all 0.2s ease;
+  }
+}
+
+.modal.invisible {
+  display: none !important;
+}
+
+.modal.visible {
+  display: auto !important;
+}
+
+// 404 -------------------------------------------------------------------------
+
+.notfound {
+  padding-top: 2rem;
+  h1 {
+    text-align: center;
+    font-family: 'Barlow', sans-serif;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 2rem;
+  }
+}
+
+.notfound-animation {
+  animation-duration: 3s;
+  animation-name: fwush;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  animation-direction: alternate;
+}
+
+@keyframes fwush {
+  from {
+    transform: scale(1.1, 1.1);
+  }
+
+  to {
+    transform: scale(0.9, 0.9);
+  }
+}
+
+.notfound-bg {
+  background-image: $bg-404;
+}
+
+// MenuPrincipal ---------------------------------------------------------------
+.menu {
+  font-size: 1.2rem;
+  padding-top: 20px;
+  color: #9F9F9F;
+
+  a, a:hover, a:active, a:visited, a:focus, a:checked {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  img {
+    width: $logo-width;
+  }
+
+  .subtitle {
+    display: inline-block;
+    padding-top: 4px;
+    font-size: 1.7rem;
+    font-family: 'Barlow', sans-serif;
+    font-weight: bold;
+    color: $orange-upem;
+  }
+
+  span {
+    cursor: pointer;
+    width: auto;
+  }
+
+  .logo, .logo span {
+    cursor: auto;
+  }
+
+  .item {
+    font-size: 1.4rem;
+    transition: all 0.2s ease;
+  }
+
+  .item:hover {
+    opacity: 0.6;
+    transition: all 0.2s ease;
+  }
+
+  .selected {
+    color: $orange-upem;
+  }
+
+}
+
+.light {
+  * {
+    color: white;
+  }
+
+  .subtitle {
+    color: white;
+  }
+}
+
+.bottom-bar {
+  background-color: #dfdfdf;
+  height: 0.5px;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  margin-top: 8px;
+}
+
+.top-bar {
+  background-color: $orange-upem;
+  height: 10px;
+  position: absolute;
+  left: 0;
+  width: 100%;
+}
+
+
+// Landing Page ----------------------------------------------------------------
+.container-full {
+  position: absolute;
+  left: 0;
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+}
+
+// ~~~ Etudiant
+.bg-etud {
+  background-image: $bg-etud;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bg-perso {
+  background-image: $bg-perso;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.fake-vertical-center {
+  margin-top: 6rem;
+}
+
+.intro {
+  padding-top: 50px;
+
+  h1 {
+    color: white;
+    font-family: 'Barlow', sans-serif;
+    font-size: 5.5rem;
+    font-weight: 800;
+  }
+
+}
+
+.btn-intro {
+  margin-top: 20px;
+  background: transparent;
+  color: white;
+  border-color: white;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 10px;
+  padding: 10px 40px;
+  transition: all 0.2s ease;
+  a {
+    text-decoration: none;
+  }
+}
+
+.btn-intro:hover {
+  color: $orange-upem;
+  background: white;
+  border-color: white;
+  transition: all 0.2s ease;
+}
+
+.btn-intro:active {
+  border-radius: 22px;
+}
+
+.credits {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+
+  a {
+    color: black;
+    cursor: pointer;
+  }
+}
+
+// SideMenuForm ----------------------------------------------------------------
+
+.new-form {
+  margin-top: 2rem;
+}
+
+.side-menu {
+  font-family: 'Lato', sans-serif;
+  font-weight: light;
+  list-style: none;
+  text-align: right;
+
+  .side-menu-item {
+    padding: 1rem 0;
+    text-decoration: none;
+    color: $gris;
+    transition: all 0.2s ease;
+  }
+
+  .side-menu-item:focus {
+  }
+
+  .side-menu-item:hover, .side-menu-item:visited, .side-menu-item:checked, .side-menu-item:focus {
+      background: none;
+      text-decoration: none;
+  }
+
+  .selectable {
+    cursor: pointer;
+    color: $lecture;
+    transition: all 0.2s ease;
+  }
+
+  .selectable:hover {
+    opacity: 0.8;
+    transition: all 0.2s ease;
+  }
+
+  .active {
+    color: $orange-upem;
+    transition: all 0.2s ease;
+  }
+}
+
+
+
+// Nouvelle demande de prêt ---------------------------------------------------------------
+
+.nouvelle-demande {
+  * {
+    transition: opacity 0.2s ease;
+  }
+
+  label {
+    font-weight: 400;
+  }
+
+  h1, h2 {
+    margin-bottom: 1.8rem;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    color: $lecture;
+  }
+
+  h2 {
+    color: $orange-upem;
+    font-weight: 500;
+  }
+
+  input::placeholder {
+    opacity: 0.7;
+  }
+
+  input {
+    min-width: 50px;
+  }
+
+  .btn-orange {
+    background-color: $orange-upem;
+    color: white;
+    border-radius: 10px;
+    padding: 5px 20px;
+    margin-top: 2rem;
+    margin-right: 1rem;
+  }
+
+  .btn-orange:disabled {
+    cursor: default;
+    opacity: 0.7;
+    background-color: $gris;
+  }
+
+  .btn-orange-outlined {
+    background: none;
+    color: $orange-upem;
+    border: 1px solid $orange-upem;
+    border-radius: 10px;
+    padding: 5px 20px;
+    margin-top: 2rem;
+    margin-right: 1rem;
+    transition: all 0.2s ease;
+  }
+
+  .btn-orange:hover, .btn-orange-outlined:hover {
+    opacity: 0.6;
+    transition: all 0.2s ease;
+  }
+
+  .btn-orange:disabled:hover {
+    opacity: 0.7;
+  }
+
+  .btn-add {
+    margin-top: 2rem;
+    transition: all 0.2s ease;
+  }
+
+  .btn-add:active {
+    outline: none;
+  }
+
+  .btn-add:hover {
+    background-color: $orange-light;
+    transition: all 0.2s ease;
+  }
+
+  .btn-add:disabled {
+    cursor: default;
+    opacity: 0.6;
+    background-color: white;
+  }
+
+  .btn-add:disabled:hover {
+    opacity: 0.6;
+    background-color: white;
+  }
+
+  .visible {
+    display: block;
+    opacity: 1;
+    transition: all 0.2s ease;
+  }
+
+  .invisible {
+    display: none;
+    opacity: 0;
+    transition: all 0.2s ease;
+  }
+
+  a {
+    cursor: pointer;
+  }
+
+  .validation {
+    * {
+      transition: opacity 0.2s ease;
+    }
+
+    a {
+      color: $orange-upem;
+      text-decoration: none;
+      cursor: pointer;
+      font-weight: 600;
+    }
+
+    a:hover {
+      opacity: 0.6;
+    }
+
+    i {
+      font-size: 2rem;
+      opacity: 0;
+      position: inherit;
+    }
+
+    .validation-section {
+      margin-bottom: 3rem;
+    }
+
+    .validation-section:hover {
+      cursor: pointer;
+
+      *  {
+        cursor: pointer;
+      }
+
+      border-right: $gris solid 1px;
+      transition: opacity 0.2s ease;
+    }
+
+    .policy {
+      margin-top: 2rem;
+    }
+
+  }
+
+  .delete-materiel-input {
+    i {
+      margin-top: 3rem;
+      margin-left: 2rem;
+      font-size: 1.5rem;
+    }
+
+    i:hover {
+      cursor: pointer;
+    }
+
+    span {
+      margin-left: 1rem;
+      opacity: 0;
+    }
+  }
+
+  .missing-field {
+    color: $rouge;
+  }
+
+  .alternativeSelect {
+    display: inline-block;
+    min-width: 6rem;
+  }
+
+  .small {
+    font-size: 1.2rem;
+  }
+}
+
+// Confirmation demande de prêt etudiant -- ---------------------------------------------------------------
+.confirmation-etudiant {
+  h1 {
+    margin-top: 3rem;
+    margin-bottom: 1.8rem;
+    color: $lecture;
+  }
+
+  h2 {
+    color: $orange-upem;
+    font-weight: 500;
+    font-size: 2.5rem;
+    margin-bottom: 1.8rem;
+  }
+
+  div {
+    margin-bottom: 3rem;
+  }
+
+  .btn-orange {
+    background-color: $orange-upem;
+    color: white;
+    border-radius: 10px;
+    padding: 5px 20px;
+    margin-top: 2rem;
+    margin-right: 1rem;
+  }
+
+  .btn-orange:hover {
+    opacity: 0.6;
+    transition: all 0.2s ease;
+  }
+}
+
+// Convention -- ---------------------------------------------------------------
+.convention {
+  h1 {
+    margin-top: 3rem;
+    margin-bottom: 1.8rem;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    color: $lecture;
+  }
+
+  h2 {
+    color: $lecture;
+    font-weight: 500;
+    font-size: 2rem;
+  }
+
+  div {
+    margin-bottom: 3rem;
+  }
+
+  div:last-child {
+    margin-bottom: 0;
+  }
+
+}
+
+// Demandes -------------------------------------------------------------------------
+
+.etudiant-demandes {
+  h1 {
+    display: inline-block;
+    margin-top: 3rem;
+    margin-bottom: 1.8rem;
+    margin-left: 5%;
+  }
+
+  h2 {
+    color: $orange-upem;
+    font-weight: 500;
+    font-size: 2.5rem;
+    margin-bottom: 1.8rem;
+  }
+
+  table {
+    width: 100%;
+  }
+
+  th, td {
+    transition: all ease 0.2s;
+    vertical-align: top;
+    padding: 1rem 0.6rem;
+    border-bottom: 5px solid white;
+  }
+
+  th.selectable {
+    cursor: pointer;
+  }
+
+  td:hover {
+    transition: all ease 0.2s;
+  }
+
+  td, td * {
+    cursor: pointer;
+    color: $noir;
+  }
+
+  tbody tr {
+    transition: all ease 0.2s;
+  }
+
+  tbody tr:hover {
+    // transition: all ease 0.2s;
+    // background-color: #999999;
+  }
+
+  tbody tr:hover td {
+    //color: white;
+  }
+
+  p {
+    margin: 0;
+  }
+
+  .search-bar {
+    display: inline;
+    max-width: 30%;
+    margin-bottom: 1.8rem;
+    margin-left: 4rem;
+    margin: 0 1rem 1.8rem 4rem;
+  }
+
+  .num-eng {
+  }
+
+  .date-debut, .date-fin {
+    min-width: 10rem;
+  }
+
+  .boutons i {
+    transition: all ease 0.2s;
+    display: inline;
+    cursor: pointer;
+    font-size: 1.8rem;
+    padding: 0 0.6rem;
+    color: $lecture;
+  }
+
+  .boutons .fa-times:hover {
+    transition: all ease 0.2s;
+    color: $rouge;
+  }
+
+  .boutons .fa-eye:hover {
+    transition: all ease 0.2s;
+    color: white;
+  }
+
+  i.visible {
+      display: inline-block !important;
+    }
+
+  i.invisible {
+      display: none !important;
+    }
+
+  .sort-icon {
+    padding-left: 0.5rem;
+  }
+
+  strong {
+    font-size: inherit;
+  }
+
+  .etat-1:hover {
+    background-color: $etat-bleu-hover;
+  }
+  .etat-2:hover {
+    background-color: $etat-jaune-hover;
+  }
+  .etat-3:hover {
+    background-color: $etat-orange-hover;
+  }
+  .etat-4:hover {
+    background-color: $etat-vert-hover;
+  }
+  .etat-5:hover {
+    background-color: $etat-rouge-hover;
+  }
+  .etat-6:hover {
+    background-color: $etat-violet-hover;
+  }
+  .etat-7:hover {
+    background-color: $etat-gris-hover;
+  }
+
+}
+
+// ETATS ----------------------------------------------------------------------
+
+.etat {
+  transition: all ease 0.2s;
+}
+.etat-1 {
+  background-color: $etat-bleu;
+}
+.etat-2 {
+  background-color: $etat-jaune;
+}
+.etat-3 {
+  background-color: $etat-orange;
+}
+.etat-4 {
+  background-color: $etat-vert;
+}
+.etat-5 {
+  background-color: $etat-rouge;
+}
+.etat-6 {
+  background-color: $etat-violet;
+}
+.etat-7 {
+  background-color: $etat-gris;
+}
+
+.etat-font-1 {
+  color: $etat-bleu;
+}
+.etat-font-2 {
+  color: $etat-jaune;
+}
+.etat-font-3 {
+  color: $etat-orange;
+}
+.etat-font-4 {
+  color: $etat-vert;
+}
+.etat-font-5 {
+  color: $etat-rouge;
+}
+.etat-font-6 {
+  color: $etat-violet;
+}
+.etat-font-7 {
+  color: $etat-gris;
+}
+
+// USERTYPES ----------------------------------------------------------------------
+
+.type-1 { // agent
+  background-color: $type-vert;
+}
+.type-2 { // delegataire
+  background-color: $type-orange;
+}
+.type-3 { // administrateur
+  background-color: $type-violet;
+}
+.type-1:hover { // agent
+  background-color: $type-vert-hover;
+}
+.type-2:hover { // delegataire
+  background-color: $type-orange-hover;
+}
+.type-3:hover { // administrateur
+  background-color: $type-violet-hover;
+}
+
+// Demande ----------------------------------------------------------------------
+
+.etudiant-demande {
+  h1 {
+    margin: 3rem 2% 0 2%;
+    display: inline-block;
+  }
+
+  h2, h2 * {
+    color: $orange-upem;
+    font-weight: 500;
+    font-size: 2.5rem;
+    margin-top: 3.5rem;
+    margin-bottom: 2rem;
+  }
+
+  h3 {
+    font-size: 2rem;
+  }
+
+  strong {
+    font-size: inherit;
+  }
+
+  p {
+    margin-bottom: 1.5rem;
+  }
+
+  .signature {
+    max-width: 250px;
+  }
+
+  ul {
+    padding: 0;
+  }
+
+  a p {
+    cursor: pointer;
+  }
+
+  a:hover {
+    color: $gris;
+  }
+
+  .barre-etat {
+    width: 100%;
+    margin-top: 2rem;
+
+    p {
+      text-align: right;
+      font-size: 1.6rem;
+      font-weight: 500;
+      margin: 0.5rem 1rem;
+    }
+  }
+
+  .modifications {
+    margin-top: 3rem;
+  }
+
+  .option {
+    display: inline;
+    padding: 0 0.5rem;
+    margin: 0 0rem;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 1.6rem;
+    transition: all 0.2s ease;
+  }
+
+  .option:hover {
+    opacity: 0.7;
+    transition: all 0.2s ease;
+  }
+
+  .option-telecharger {
+    color: $orange-upem;
+  }
+
+  @-webkit-keyframes rotation {
+		from {
+				-webkit-transform: rotate(0deg);
+		}
+		to {
+				-webkit-transform: rotate(359deg);
+		}
+}
+
+  #telecharger {
+    visibility: hidden;
+    color: $orange-upem;
+    margin-left: 0.5rem;
+    -webkit-animation: rotation 2.5s infinite linear;
+    animation: rotation 2.5s infinite linear;
+  }
+
+  .option-supprimer {
+    color: $rouge;
+  }
+
+  .option-modifier {
+    color: $bleu;
+  }
+
+  .option-valider {
+    color: $vert;
+  }
+
+  .option-remise {
+    color: $vert;
+  }
+
+  .option-reserve {
+    color: $rouge;
+  }
+
+  .options {
+    text-align: right;
+  }
+
+}
+
+/* Delegataire Conventions *************************************************/
+
+.demandes-sub-menu {
+  margin-left: 2rem;
+
+  div {
+    display: inline-block;
+    padding: 0 1rem;
+    cursor: pointer;
+  }
+
+  div:hover {
+    opacity: 0.6;
+  }
+
+  .selected {
+    color: $orange-upem;
+  }
+}
+
+// Top Button  ----------------------------------------------------------------------
+
+.top-button {
+  font-size: 4rem;
+  color: $orange-upem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.top-button:hover {
+  opacity: 0.7;
+  transition: all 0.2s ease;
+}
+
+// Administration *************************************************************
+.administration {
+
+  .btn-add {
+    margin-top: 2rem;
+    transition: all 0.2s ease;
+  }
+
+  .btn-add:active {
+    outline: none;
+  }
+
+  .btn-add:hover {
+    background-color: $orange-light;
+    transition: all 0.2s ease;
+  }
+
+  .bureau {
+    background-color: #E6A498;
+  }
+
+  .bureau:hover {
+    background-color: #ECBBB2;
+  }
+}
+
+.delete-agent-input {
+  i {
+    margin-top: 3rem;
+    margin-left: 2rem;
+    font-size: 1.5rem;
+  }
+
+  i:hover {
+    cursor: pointer;
+  }
+
+  span {
+    margin-left: 1rem;
+    opacity: 0;
+  }
+}
